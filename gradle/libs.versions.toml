@@ -64,7 +64,8 @@ material-icons-extended = { module = "org.jetbrains.compose.material:material-ic
 navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 
-multiplatform-settings = { module = "com.russhwolf:multiplatform-settings-serialization", version.ref = "multiplatformSettings" }
+multiplatform-settings = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatformSettings" }
+multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettings" }
 multiplatform-settings-serialization = { module = "com.russhwolf:multiplatform-settings-serialization", version.ref = "multiplatformSettings" }
 
 # Core Navigation 3 libraries
@@ -76,6 +77,11 @@ androidx-material3-navigation3 = { module = "androidx.compose.material3.adaptive
 androidx-lifecycle-viewmodel-navigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "nav3Lifecycle" }
 
 [bundles]
+settings = [
+    "multiplatform-settings",
+    "multiplatform-settings-no-arg",
+    "multiplatform-settings-serialization"
+]
 nav = [
     "androidx-navigation3-runtime",
     "androidx-navigation3-ui",

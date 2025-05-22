@@ -86,13 +86,10 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
 
             implementation(libs.bundles.koin)
-//            implementation("io.insert-koin:koin-core:4.1.0-RC1") {
-//                exclude(group = "io.insert-koin", module = "koin-core-annotations-jvm")
-//            }
             api(libs.koin.annotations)
             implementation(libs.bundles.ktor)
             implementation(libs.bundles.coil)
-
+            implementation(libs.bundles.settings)
 
             implementation(libs.material.icons.core)
             implementation(libs.material.icons.extended)
@@ -101,8 +98,6 @@ kotlin {
             implementation(libs.kotlinx.coroutines.core)
 //            implementation(libs.bundles.nav)
 
-            implementation(libs.multiplatform.settings)
-            implementation(libs.multiplatform.settings.serialization)
             if(ProjectConfig.IS_DEBUG)
                 implementation(libs.ktor.monitor.logging)
             else
