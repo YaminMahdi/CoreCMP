@@ -8,7 +8,6 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.ViewModelStoreOwner
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import coil3.compose.LocalPlatformContext
@@ -24,7 +23,7 @@ fun SetupMainNavGraph(
     navController: NavHostController,
 ) {
     val context = LocalPlatformContext.current
-    val viewModel = koinViewModel<MainViewModel>(viewModelStoreOwner= context as ViewModelStoreOwner)
+    val viewModel = koinViewModel<MainViewModel>()
 
     val mainModifier : Modifier = Modifier.fillMaxSize()
     NavHost (
