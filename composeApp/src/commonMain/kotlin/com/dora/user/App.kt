@@ -1,11 +1,11 @@
 package com.dora.user
 
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
 import com.dora.user.di.appModules
 import com.dora.user.presentation.navigation.Screens
 import com.dora.user.presentation.navigation.graph.SetupMainNavGraph
+import com.dora.user.ui.theme.DoraTheme
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.koin.compose.KoinApplication
 
@@ -13,7 +13,7 @@ import org.koin.compose.KoinApplication
 @Preview
 fun App() {
     KoinApplication(application = { modules(appModules) }) {
-        MaterialTheme {
+        DoraTheme {
             val navController = rememberNavController()
             SetupMainNavGraph(
                 startDestination = Screens.Home,
