@@ -12,7 +12,7 @@ object ProjectConfig {
 
     const val IS_DEBUG = true
 
-    val javaVersion = JavaVersion.VERSION_23
+    val javaVersion = JavaVersion.VERSION_21
     const val BASE_URL_LIVE = ""
     const val BASE_URL_DEV = ""
 }

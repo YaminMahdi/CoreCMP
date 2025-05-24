@@ -11,12 +11,11 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 object Screens {
-    @Serializable object Onboarding
     @Serializable object SignIn
     @Serializable object SignUp
 
+    @Serializable object Onboarding
     @Serializable object Home
-
 
     @Serializable
     data class ErrorDialog(val error: String)
